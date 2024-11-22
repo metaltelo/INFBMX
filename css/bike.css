@@ -1,0 +1,173 @@
+.osn a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.osn ul {
+    margin: 1% 0;
+}
+
+
+.osn p {
+    margin: 1% 0;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto 2%;
+    gap: 7%
+}
+
+.bike {
+    display: flex;
+    flex-direction: column;
+}
+
+.bike img{
+    max-width: 100%;
+}
+
+.bike div{
+    flex: 1;
+    align-items: center;
+}
+
+.navig {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.navig div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navig div a:nth-child(1) {
+    color: #930000;
+    border: 4px #930000 solid;
+    border-radius: 30px;
+    width: 60%;
+}
+
+.navig div a:nth-child(1):hover {
+    background-color: #930000;
+    color: #ffffff;
+    border: 4px #930000 solid;
+    text-shadow: none;
+    box-shadow: 3px 3px 6px #000000a8;
+}
+
+.navig a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    padding: 6%;
+    transition: 0.3s;
+}
+
+.navig a:hover, #spica a, #koleca a, #privod a  {
+    color: #7A0000;
+}
+
+.osn ul li {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.osn ul li::marker {
+    color: #8b0000;
+}
+
+.img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4%;
+    gap: 2%;
+}
+
+.imgg {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    margin: 0 4%;
+    gap: 2%;
+}
+
+img {
+    width: 100%;
+}
+
+.mobilnav {
+    display: none;
+}
+
+.one {
+    margin: 0 4%;
+    text-align: center;
+}
+
+.one img {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (1091px <= width <=1250px) {
+    .navig a {
+        padding: 3%;
+    }
+}
+
+@media (950px <= width <= 1091px) {
+    .navig a {
+        padding: 1%;
+    }
+}
+
+@media (width <= 950px) {
+    .navig {
+        display: none;
+    }
+
+    .mobilnav {
+        display: block;
+        border: #7a0000 solid 3px;
+        border-radius: 18px;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 600;
+        margin: 4% 4% 0;
+        padding: 2% 0.5%;
+    }
+
+    .mobilnav a {
+        color: #7a0000;
+    }
+
+    .img {
+        flex-direction: column;
+    }  
+
+    .img img:nth-child(1) {
+        margin-bottom: 4%;
+    }
+
+    .imgg {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width <= 594px) {
+    .imgg {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0%;
+    }
+}

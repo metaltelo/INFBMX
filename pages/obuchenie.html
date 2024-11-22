@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Обучение</title>
+        <link rel="stylesheet" href="../css/obuchenie.css">
+        <link rel="stylesheet" href="../css/sait.css">
+        <script src="../js/sait.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="../js/jquery.maskedinput.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="logo">            
+                <img src="../photo/logo.png">
+                <img src="../photo/logo.png">
+                <img src="../photo/logo.png">
+                <img src="../photo/logo.png">
+                <img src="../photo/logo.png">
+            </div>
+            <header>
+                <div><img src="../photo/1.png"></div>
+                <div><img src="../photo/2.png"></div>
+                <div class="zero"><img src="../photo/3.png"></div>
+                <div><img src="../photo/4.png"></div>
+            </header>
+            <div class="menumain">
+                <a href="../main.html">ГЛАВНАЯ</a>
+                <a href="bike.html">БАЙК</a>
+                <a href="styles.html">СТИЛИ</a>
+                <a href="spots.html">СПОТЫ</a>
+                <a href="tricks.html">ТРЮКИ</a>
+                <a href="href.html">ССЫЛКИ</a>
+            </div>
+            <div class="menu">
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                      <div id="bar1" class="bar"></div>
+                      <div id="bar2" class="bar"></div>
+                      <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                      <ul>
+                        <li><a href="../main.html">ГЛАВНАЯ</a></li>
+                        <li><a href="bike.html">БАЙК</a></li>
+                        <li><a href="styles.html">СТИЛИ</a></li>
+                        <li><a href="spots.html">СПОТЫ</a></li>
+                        <li><a href="tricks.html">ТРЮКИ</a></li>
+                        <li><a href="href.html">ССЫЛКИ</a></li>
+                      </ul>
+                    </nav> 
+                  </div> 
+                <div class="menu-bg" id="menu-bg"></div>
+            </div>
+            <div class="osn">
+                <h2>Обучение</h2>
+                <p>На этой странице Вы можете записаться на обучение к одному из наших тренеров, ответив всего на несколько вопросов.</p>
+                <p>Больше о каждом из тренеров и системе тренировок вы можете узнать в разделе <a href="about.html">О нас</a>.</p>
+                <div class="form">
+                    <h2>Форма записи на тренировку</h2>
+                    <form action="obuchenie.html" method="post">
+                        <p>
+                            <label for="skil">Катались ли Вы раньше на BMX?</label><br>
+                            <input type="radio" name="rd1" id="skil" value="Да">Да<br>
+                            <input type="radio" name="rd1" value="Нет" required>Нет<br>
+                        </p>
+                        <table>
+                            <colgroup>
+                                <col class="first"/>
+                                <col class="second"/>
+                            </colgroup>
+                            <tr class="min">
+                                <td>
+                                    <label for="styles">Выберите стиль катания </label>
+                                </td>
+                                <td>
+                                    <select id="styles">
+                                        <option>race</option>
+                                        <option>vert</option>
+                                        <option>flat</option>
+                                        <option>park</option>
+                                        <option>street</option>
+                                        <option>dirt</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mini" colspan="2"><small>Больше о стилях <a href="styles.html">здесь</a></small></td>
+                            </tr>
+                            <tr class="min">
+                                <td>
+                                    <label for="spots">Выберите спот </label>
+                                </td>
+                                <td>
+                                    <select id="spots" class="spots" >
+                                        <option>Свой спот (не забудьте ввести адрес в дополнительном окне)</option>
+                                        <option>Автоподбор под ваш район (необходимо указать ниже)</option>
+                                        <option>Bunnyhop м.Беломорская</option>
+                                        <option>GORILLA х Rampstroy House м.Дмитровская</option>
+                                        <option>Bunnyhop м.Сокольники</option>
+                                        <option>Скейт-парк м.Сокольники</option>
+                                        <option>Москомспорт м.Семеновская</option>
+                                        <option>Bunnyhop м.Электрозаводская</option>
+                                        <option>Rampstroy House м.Шоссе Энтузиастов</option>
+                                        <option>Rampstroy х Кураж м.Волгоградский проспект</option>
+                                        <option>Памп-трек м.Марьино</option>
+                                        <option>Cкейт парк м.Алма-Атинская</option>
+                                        <option>Скейт-парк м.Улица Академика Янгеля</option>
+                                        <option>Памп-трек м.Чертановская</option>
+                                        <option>Скейт-парк м.Чертановская</option>
+                                        <option>Boroda BMX парк м.Каширская</option>
+                                        <option>Cкейт парк м.Коломенская</option>
+                                        <option>KSS парк м.Нагатинская</option>
+                                        <option>Памп-трек м.Строгино</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mini" colspan="2"><small>Больше о спотах Москвы <a href="spots.html">здесь</a></small></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="trener">Выберите тренера </label>
+                                </td>
+                                <td>
+                                  <select id="trener">
+                                    <option>Дэтов Юрий</option>
+                                    <option>Вихорев Денис</option>
+                                    <option>Конова Елизавета</option>
+                                  </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">Введите имя </label>
+                                </td>
+                                <td>
+                                    <input type="text" id="name" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="tel">Введите телефон </label>
+                                </td>
+                                <td>
+                                    <input type="text" class="phone" required>
+                                </td>
+                            </tr>
+                        </table>
+                        <p><label for="treb">Если у Вас есть желание заниматься на другом споте или дополнительные требования и пожелания к тренировке, укажите их здесь</label></p>
+                        <p><textarea name="treb" rows="3" cols="10"></textarea></p>
+                        <div class="otprav"><input type="submit" value="Отправить">  <input type="reset" value="Очистить"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="logo">            
+                <img src="../photo/logo.png">
+                <img src="../photo/logo.png">
+                <img src="../photo/logo.png">
+                <img src="../photo/logo.png">
+                <img src="../photo/logo.png">
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="l">
+                        <a href="../main.html">Главная</a>
+                        <a href="bike.html">Байк</a>
+                        <a href="styles.html">Стили</a>
+                        <a href="spots.html">Споты</a>
+                        <a href="tricks.html">Трюки</a>
+                        <a href="href.html">Ссылки</a>
+                    </div>
+                    <div class="c">
+                        <a href="about.html">О нас</a>
+                        <ul>
+                            <li>Контакты:</li>
+                            <ul>
+                                <li>Телефон: +7(495)-743-29-64</li>
+                                <li>Почта: infbmx@gmail.com</li>
+                                <li>ВК: @infbmx</li>
+                            </ul>
+                            <li>Часы работы: 9:00-19:00</li>
+                        </ul>
+                        <a href="obuchenie.html">Обучение</a><br>
+                        <a href="skatepark.html">Запись в скейтпарк</a>
+                    </div>
+                    <div class="r">
+                        <a href="obrsvyaz.html">Обратная связь и предложения</a>
+                        <ul>
+                            <li>Хочешь предложить красивые фотографии или известные тебе споты, о которых не говорится на сайте - отправь заявку здесь</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="last">
+                    <p>© INFBMX 2024</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+            $(function($){
+                $(".phone").mask("+7 (999) 999-99-99");
+            });
+            $(document).ready(function () {
+                $(".spots").select2();
+            });
+        </script>
+    </body>
+</html>

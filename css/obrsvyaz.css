@@ -1,0 +1,121 @@
+.osn a {
+    color: #7a0000;
+    text-decoration: none;
+}
+
+.osn a:hover {
+    border-bottom: dashed #7a0000;
+}
+
+.form {
+    width: 90%;
+    border: dashed 4px #7A0000;
+    border-radius: 40px;
+	margin: 2% auto;
+    padding: 2% 0;
+}
+
+.form h3 {
+    color: #7a0000;
+    margin: 0 auto 2%; 
+    padding: 0 4%;
+}
+
+form {
+    width: 95%;
+    margin: auto;
+}
+
+form p {
+    text-indent: 0 !important;
+    margin: 1% 0;
+}
+
+textarea  {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: "Comic Sans MS",sans-serif; 
+    border: #7a0000 3px solid;
+    padding: 0 2.3%;
+    border-radius: 11px;
+    background-color: #ffffff;
+    text-overflow: ellipsis;
+    text-indent: 0 !important;
+    caret-color:#7A0000;
+}
+
+.otprav {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: auto;
+    padding: 1% 4%;
+}
+
+input[type=reset], input[type=submit] {
+    background: #7a0000;
+    border: #7a0000 3px solid;
+    color: white;
+    padding: 0.5% 2.3%;
+    border-radius: 11px;
+    font-family: "Comic Sans MS",sans-serif; 
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+input[type=reset]:hover, input[type=submit]:hover {
+    box-shadow: 3px 3px 6px #00000093;
+}
+
+input[type=reset] {
+    color: #7a0000;
+    background: #ffffff;
+}
+
+input[type=file] {
+    width: 97.5%;
+    margin-right: 4%;
+    font-family: "Comic Sans MS",sans-serif; 
+    border: #7a0000 3px solid;
+    padding: 1%;
+    border-radius: 11px;
+    color: #565656;
+    background: #fff;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 2%;
+    font-family: "Comic Sans MS",sans-serif; 
+    background: #7a0000;
+    border: #7a0000 3px solid;
+    color: white;
+    padding: 0.5% 2%;
+    border-radius: 11px;
+    font-family: "Comic Sans MS",sans-serif; 
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+  
+input[type=file]::file-selector-button:hover {
+    box-shadow: 3px 3px 6px #00000093;
+}
+
+@media (width <= 700px) {
+    table, .form p {
+        padding: 0 !important;
+    }
+    .form {
+        margin: 4% auto;
+        border: dashed 4px #7A0000;
+    }
+    form {
+        width: 90%;
+    }
+    .otprav {
+        justify-content: center;
+    }
+}

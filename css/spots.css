@@ -1,0 +1,131 @@
+
+.osn ul li::marker {
+    color: #8b0000;
+}
+
+.osn ul {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.osn a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.osn a:hover {
+    color: #7a0000;
+    border-bottom: dashed #7a0000;
+}
+
+hr {
+    border: 1.5px solid #2b13005d;
+}
+
+.figur {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.figur img {
+    border-radius: 25px;
+}
+
+.long {
+    margin: 2% auto;
+    width: 93%;
+}
+
+.long img {
+    border-radius: 25px;
+    width: 100%;
+}
+
+.spotic p {
+    margin: 1% auto 0;
+}
+
+.spotic a {
+    color: #7a0000
+}
+
+.spot {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: end;
+    margin: 0 auto 3%;
+    gap: 8%;
+}
+
+.spot div p {
+    margin: 0;
+}
+
+.spot div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spot div img {
+    width: 70%;
+}
+
+#map {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+@media (max-width: 1250px) {
+    .figur {
+        display: block;
+        width: 100%;
+    }
+    .img{
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .spot {
+        width: 87%;
+    }
+}
+
+@media (max-width: 800px) {
+    .spot div img {
+        width: 60%;
+        gap:5%
+    }
+
+    .spot {
+        width: 95%;
+    }
+}
+
+@media (max-width: 887px) {
+    .spot {
+        width: 93%;
+        gap: 5%;
+    }
+}
+
+@media (max-width: 455px){
+    .spot {
+        gap: 1%;
+        width: 100%;
+        font-size: 4.1vw;
+    }
+
+}

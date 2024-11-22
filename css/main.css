@@ -1,0 +1,33 @@
+.bmx {
+    position: relative;
+    font-weight: 600;
+}
+
+hr {
+    width: 0.2%;
+    height: 100%;
+    position: absolute;
+    left: 3%;
+    top: -10px;
+    background-color: #8b0000;
+    border-color: #8b0000;
+    box-shadow: -3px 0px 10px #232323a9;
+}
+
+.osnov {
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-around;
+    gap: 3%;
+}
+
+.osnov img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media(max-width: 800px) {
+    hr {
+        opacity: 0;
+    }
+}

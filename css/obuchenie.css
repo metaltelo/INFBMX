@@ -1,0 +1,134 @@
+.osn a {
+    color: #7a0000;
+    text-decoration: none;
+}
+
+.osn a:hover {
+    border-bottom: dashed #7a0000;
+}
+
+.form {
+    width: 90%;
+    border: dashed 4px #7A0000;
+    border-radius: 40px;
+	margin: 2% auto;
+    padding: 2% 0;
+}
+
+.form h2 {
+    color: #7a0000;
+    margin: 0 auto 2%; 
+}
+
+form {
+    width: 95%;
+    margin: auto;
+}
+
+form p {
+    text-indent: 0 !important;
+    margin: 0;
+}
+
+small {
+    color: #767676;
+}
+
+table {
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 100%;
+}
+
+td {
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+}
+
+.min td {
+    padding-bottom: 0;
+}
+
+.mini {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+table input, select, textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: "Comic Sans MS",sans-serif; 
+    border: #7a0000 3px solid;
+    padding: 0.5% 2.3%;
+    border-radius: 11px;
+    background-color: #ffffff;
+    text-overflow: ellipsis;
+    caret-color:#7A0000;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type="radio"] {
+    accent-color: #7a0000;
+}
+
+option:checked {
+    background: #7b0000;
+    color: #ffecdb;
+}
+
+.otprav {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: auto;
+    padding: 1% 4%;
+}
+
+input[type=reset], input[type=submit] {
+    background: #7a0000;
+    border: #7a0000 3px solid;
+    color: white;
+    padding: 0.5% 2.3%;
+    border-radius: 11px;
+    font-family: "Comic Sans MS",sans-serif; 
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+input[type=reset]:hover, input[type=submit]:hover {
+    box-shadow: 3px 3px 6px #00000093;
+}
+
+input[type=reset] {
+    color: #7a0000;
+    background: #ffffff;
+}
+
+@media (width <= 700px) {
+    table, .form p {
+        padding: 0 !important;
+    }
+    .form {
+        margin: 4% auto;
+        border: dashed 4px #7A0000;
+    }
+    form {
+        width: 90%;
+    }
+    .otprav {
+        justify-content: center;
+    }
+}

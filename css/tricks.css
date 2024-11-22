@@ -1,0 +1,187 @@
+.osn ul li::marker {
+    color: #8b0000;
+}
+
+.spisok {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.spisok div {
+    border: dashed 4px #8b0000;
+    border-radius: 25px;
+    position: relative;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.spisok button {
+    opacity: 0;
+    padding: 3%;
+}
+
+.spisok img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.spisok ul li {
+    margin-left: -6px;
+}
+
+.spisok a {
+    text-decoration: none;
+    color: #8b0000;
+    border: 2.5px solid #8b0000;
+    border-radius: 30px;
+    padding: 0.5% 2%;
+    position: absolute; 
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.spisok a:hover {
+    background-color: #7A0000;
+    color: white;
+    border: 2.5px solid #7A0000;
+}
+
+.spisok div:hover {
+    box-shadow: 0 0 15px;
+}
+
+.shapka {
+    margin: 2% 0;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shapka img {
+    width: 100%;
+}
+
+.shapka h3 {
+    margin: 0;
+}
+
+.vid, .gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vid {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.trick {
+    width: 31%;
+}
+
+.trick ul {
+    margin-left: -5%;
+    margin-top: 0;
+}
+
+.trick li {
+    padding-bottom: 6%;
+    padding-right: 10%;
+}
+
+.none li {
+    list-style-type: none;
+}
+
+.non ul {
+    padding: 0;
+    margin: 0;
+}
+
+.gallery {
+    width: 100%;
+    gap: 3%;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+
+@media (width < 760px) {
+    .spisok {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .spisok div a {
+        opacity: 1;
+        bottom: 3%;
+        right: 3%;
+    }
+    .spisok button {
+        display: none;
+    }
+    .shapka {
+        display: block;
+    }
+    .ubr {
+        display: none;
+    }
+}
+
+@media (width <= 1230px) {
+    .vid {
+        display: block;
+    }
+    .trick {
+        margin-top: 3%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .trick li {
+        padding-bottom: 1%;
+    }
+    .non ul {
+        width: 110%;
+    }
+    .trick ul {
+        margin-left: -2%;
+        margin-top: 0;
+    }
+}
+
+
+@media (760px <= width <= 1200px) {
+    .spisok {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (width < 500px) {
+    .ubr2 {
+        display: none;
+    }
+    .trick ul {
+        margin-left: -5%;
+        margin-top: 0;
+    }
+}
+
+@media (hover: hover) {
+    .spisok a {
+        opacity: 0;
+    }
+    .spisok div:hover a {
+        opacity: 1;
+        transition: 0.7s;
+    }
+}
+

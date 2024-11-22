@@ -1,0 +1,228 @@
+body {
+    overflow-x: hidden;
+}
+
+.osn ul li {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.osn ul li::marker {
+    color: #8b0000;
+}
+
+.osn a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.osn a:hover {
+    color: #7a0000;
+    border-bottom: dashed #7a0000;
+}
+
+h4 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 2vw auto 3vw auto;;
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log img {
+    width: 80%;
+    margin: 0;
+}
+
+.race, .flat, .dirt, .park, .vert, .street {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 675px;
+    -webkit-overflow-scrolling: touch; 
+    margin: 0px auto;
+}
+
+.flat {
+    width: 800px;
+}
+
+.street {
+    width: 600px;
+}
+.street img {
+    width: 600px;
+}
+
+.slide {
+    scroll-snap-align: start;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.slide img {
+    border-radius: 25px;
+}
+
+.aboutbike {
+    display: flex;
+    justify-content:space-between;
+    width: 95%;
+    margin: 0px auto 20px auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.aboutbike ul li {
+    margin-left: 0;
+}
+
+
+.aboutbike div {
+    flex: 1;
+}
+
+.aboutbike img {
+    margin-right: 30px;
+    max-width: 100%;
+}
+
+.aboutbike ul {
+    min-width: 40%;
+}
+
+@media (width <= 930px) {
+    .osn a:visited {
+        color: #8b0000;
+    }
+
+    .aboutbike {
+        display: block;
+    }
+
+    .log img {
+        display: none;
+    }
+}
+
+@media (1175px < width <= 1330px) {
+    .race, .flat, .dirt, .park, .vert {
+        width: 550px;
+    }
+    .slide img{
+        width: 550px;
+    }
+    .flat img {
+        width: 275px;
+    }
+    .street {
+        width: 486px;
+    }
+    .street img {
+        width: 486px;
+    }
+}
+
+@media (1045px < width <= 1175px) {
+    .race, .flat, .dirt, .park, .vert {
+        width: 484px;
+    }
+    .slide img{
+        width: 484px;
+    }
+    .log img {
+        max-width: 73%;
+    }
+    .flat img {
+        width: 242px;
+    }
+    .street {
+        width: 418px;
+    }
+    .street img {
+        width: 418px;
+    }
+    .slider {
+        width: 99%;
+    }
+    .minus {
+        display: none;
+    }
+}
+
+@media (930px < width <= 1045px) {
+    .race, .flat, .dirt, .park, .vert {
+        width: 402px;
+    }
+    .slide img {
+        width: 402px;
+    }
+    .log img {
+        max-width: 60%;
+    }
+    .flat img{
+        width: 201px;
+    }
+    .street {
+        width: 334px;
+    }
+    .street img {
+        width: 334px;
+    }
+    .minus {
+        display: none;
+    }
+    .slider {
+        width: 100%;
+    }
+
+}
+
+@media (680px < width <= 930px) {
+    .race, .flat, .dirt, .park, .vert, .street {
+        width: 560px;
+    }
+
+    .slide img{
+        width: 560px;
+    }
+
+    .flat img{
+        width: 280px;
+    }
+}
+
+
+@media (500px < width <= 680px) {
+    .race, .flat, .dirt, .park, .vert, .street {
+        width: 416px;
+    }
+
+    .slide img{
+        width: 416px;
+    }
+}
+
+
+@media (width <= 500px) {
+    .race, .flat, .dirt, .park, .vert, .street {
+        width: 300px;
+    }
+
+    .slide img{
+        width: 300px;
+        border-radius: 15px;
+    }
+}
